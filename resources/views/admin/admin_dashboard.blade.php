@@ -4,23 +4,13 @@
 
 
 
+    @include('admin.body.header')
 
+    <!-- Side partials/_sidebar.html -->
+    @include('admin.body.sidebar')
 
+    @include('admin.body.topNave')
 
+    @yield('admin')
 
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
-</head>
-<body>
-    <h1>Admin Dashboard </h1>
-</body>
-</html>
+    @include('admin.body.footer')
